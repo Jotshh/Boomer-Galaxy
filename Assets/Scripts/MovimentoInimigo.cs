@@ -13,6 +13,7 @@ public class MovimentoInimigo : MonoBehaviour
     public float tempoAtualdosLasers;
 
     public bool inimigoAtirador;
+    public bool inimigoAtivado;
 
     [Header("Movimento")]
     public float velocidade = 2f;
@@ -32,6 +33,7 @@ public class MovimentoInimigo : MonoBehaviour
     
     void Start()
     {
+        inimigoAtivado = false;
         vidaAtualInimigo = vidaMaximaInimigo;
 
         alvo = GameObject.FindGameObjectWithTag("Player");
@@ -45,10 +47,15 @@ public class MovimentoInimigo : MonoBehaviour
     {
         movimentarInimigo();
 
-        if (inimigoAtirador == true)
+        if (inimigoAtirador == true && inimigoAtivado == true)
         {
             AtirarLaserInimigo();
         }
+    }
+
+    public void AtivarInimigo()
+    {
+        inimigoAtivado = true;
     }
 
     private void movimentarInimigo()

@@ -5,6 +5,10 @@ public class MovimentoInimigo : MonoBehaviour
     public GameObject laserDoInimigo;
     public Transform localDoDisparoInimigo;
 
+    [Header("Drop de Itens")]
+    public GameObject itemDropar;
+    public int chanceDroparItem;
+
     public float tempoEntreTiros;
     public float tempoAtualdosLasers;
 
@@ -68,9 +72,18 @@ public class MovimentoInimigo : MonoBehaviour
 
         if (vidaAtualInimigo <= 0)
         {
-            Destroy(this.gameObject);
+            
             Instantiate(prefabExplosao, transform.position, Quaternion.identity);
             GameManager.instance.AdicionarPontos(pontosPorMorte);
+
+            int numeroAleatorio = Random.Range(0, 100);
+
+            if (numeroAleatorio <= chanceDroparItem)
+            {
+                Instantiate(itemDropar, transform.position, Quaternion.identity);
+            }
+
+            Destroy(this.gameObject);
         }
     }
 

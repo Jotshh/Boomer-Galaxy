@@ -84,6 +84,8 @@ public class PlayerController : MonoBehaviour
                 Instantiate(laserDoPlayer, LocalDoDisparoEsquerdo.position, Quaternion.identity);
                 Instantiate(laserDoPlayer, LocalDoDisparoDireito.position, Quaternion.identity);
             }
+
+            EfeitosSonoros.instance.somLaserJogador.Play();
         }
     }
 

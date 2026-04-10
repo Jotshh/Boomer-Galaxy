@@ -85,6 +85,7 @@ public class MovimentoInimigo : MonoBehaviour
             
             Instantiate(efeitoExplosao, transform.position, Quaternion.identity);
             GameManager.instance.AdicionarPontos(pontosPorMorte);
+            EfeitosSonoros.instance.somExplosao.Play();
 
             int numeroAleatorio = Random.Range(0, 100);
 
@@ -103,6 +104,7 @@ public class MovimentoInimigo : MonoBehaviour
         {
             collisioninfo.gameObject.GetComponent<VidaJogador>().ReceberDano(danoDaNave);
             Instantiate(efeitoExplosao, transform.position, Quaternion.identity);
+            EfeitosSonoros.instance.somExplosao.Play();
             Destroy(this.gameObject);
         }
     }

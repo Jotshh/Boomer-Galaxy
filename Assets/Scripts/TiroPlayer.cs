@@ -33,6 +33,7 @@ public class TiroPlayer : MonoBehaviour
         {    
             other.gameObject.GetComponent<MovimentoInimigo>().MachucarInimigo(dano);   
             Instantiate(impactoDoLaserJogador, transform.position, Quaternion.identity);
+            EfeitosSonoros.instance.somImpacto.Play();
             Destroy(this.gameObject);
         }
     }

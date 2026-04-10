@@ -15,6 +15,8 @@ public class MovimentoInimigo : MonoBehaviour
     public bool inimigoAtirador;
     public bool inimigoAtivado;
 
+    public int danoDaNave;
+
     [Header("Movimento")]
     public float velocidade = 2f;
 
@@ -25,6 +27,7 @@ public class MovimentoInimigo : MonoBehaviour
     
     [Header("Efeitos")]
     public GameObject prefabExplosao;
+    public GameObject efeitoExplosao;
     
     [Header("Pontuação do Inimigo")]
     public int pontosPorMorte = 100;
@@ -80,7 +83,7 @@ public class MovimentoInimigo : MonoBehaviour
         if (vidaAtualInimigo <= 0)
         {
             
-            Instantiate(prefabExplosao, transform.position, Quaternion.identity);
+            Instantiate(efeitoExplosao, transform.position, Quaternion.identity);
             GameManager.instance.AdicionarPontos(pontosPorMorte);
 
             int numeroAleatorio = Random.Range(0, 100);
@@ -90,6 +93,16 @@ public class MovimentoInimigo : MonoBehaviour
                 Instantiate(itemDropar, transform.position, Quaternion.identity);
             }
 
+            Destroy(this.gameObject);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collisioninfo)
+    {
+        if(collisioninfo.gameObject.tag == "Player")
+        {
+            collisioninfo.gameObject.GetComponent<VidaJogador>().ReceberDano(danoDaNave);
+            Instantiate(efeitoExplosao, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
     }

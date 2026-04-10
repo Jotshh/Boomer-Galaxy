@@ -135,8 +135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Velocidade
   velocidade: 10
+  impactoDoLaserJogador: {fileID: 1693738495570114529, guid: 234c163297327e941a38e638944899c2, type: 3}
   dano: 1
-  tempoEntreDisparos: 0.5
   prefabExplosao: {fileID: 6278201775517810574, guid: ed1d8c3107f218742812d8673f594805, type: 3}
 --- !u!70 &7943558232297320496
 CapsuleCollider2D:

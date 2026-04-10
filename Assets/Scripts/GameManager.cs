@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     public Text textoPontuacao;
     public Text textoPontuacaoFinal;
 
+    public Text highScoreText;
+
     public Text textoMelhorPontuacao;
     
     [Header("Configurações")]
@@ -39,7 +41,6 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         MusicaFundo.Play();
         MusicaGameOver.Stop();
-
         pontuacaoAtual = 0;
         textoPontuacao.text = "Pontos: " + pontuacaoAtual;
     }
@@ -53,11 +54,10 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {     
+        panelGameOver.SetActive(true);
         Time.timeScale = 0f; 
         MusicaFundo.Stop();
         MusicaGameOver.Play();
-        panelGameOver.SetActive(true);
         textoPontuacaoFinal.text = "Pontuação Final: " + pontuacaoAtual;
-        Debug.Log("Game Over!");
     }
 }

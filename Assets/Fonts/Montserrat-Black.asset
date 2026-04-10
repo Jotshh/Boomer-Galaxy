@@ -5874,7 +5874,7 @@ Material:
     - _VertexOffsetY: 0
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
-    - _FaceColor: {r: 0.57758063, g: 0.088655606, b: 0.07036011, a: 1}
+    - _FaceColor: {r: 0.5803922, g: 0.5803922, b: 0.5803922, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!28 &5138095083801068759

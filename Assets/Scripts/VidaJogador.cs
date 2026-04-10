@@ -75,7 +75,7 @@ public class VidaJogador : MonoBehaviour
         vidaAtualJogador = Mathf.Clamp(vidaAtualJogador, 0, vidaMaximaJogador);
     }
 
-    void AtualizarInterfaceVida()
+    public void AtualizarInterfaceVida()
     {
         for (int i = 0; i < vidasJogador.Length; i++)
         {

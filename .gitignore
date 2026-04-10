@@ -102,3 +102,5 @@ InitTestScene*.unity*
 Settings/
 _Recovery
 .sixth
+.vscode/
+Boomer-Galaxy.slnx

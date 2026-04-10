@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 91fad8c36f2e6974fb10bae344be7754
+guid: 38ce03f6530e81545bdac301ace7135a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7440872903670877268
-    second: MENU_0
+      213: 7421822806400291358
+    second: Barra de Vida_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MENU_0
+      name: Barra de Vida_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 3840
-        height: 3840
+        width: 98
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca33edd7485bcb890800000000000000
-      internalID: -7440872903670877268
+      spriteID: e12d169158c9ff660800000000000000
+      internalID: 7421822806400291358
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MENU_0: -7440872903670877268
+      Barra de Vida_0: 7421822806400291358
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

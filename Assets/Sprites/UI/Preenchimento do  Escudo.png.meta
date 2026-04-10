@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 91fad8c36f2e6974fb10bae344be7754
+guid: 5a9bed697570caf479360296f0da0cd7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7440872903670877268
-    second: MENU_0
+      213: -9031743748357056042
+    second: Preenchimento do  Escudo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MENU_0
+      name: Preenchimento do  Escudo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 3840
-        height: 3840
+        width: 60
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ca33edd7485bcb890800000000000000
-      internalID: -7440872903670877268
+      spriteID: 6d992d0c9ecc8a280800000000000000
+      internalID: -9031743748357056042
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MENU_0: -7440872903670877268
+      Preenchimento do  Escudo_0: -9031743748357056042
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

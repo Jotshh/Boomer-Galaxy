@@ -14,10 +14,16 @@ public class VidaJogador : MonoBehaviour
     public int vidaMaximaEscudo;
     public int vidaAtualEscudo;
 
+    public Slider barraDeEnergiaEscudo;
+
     void Start()
     {
         vidaAtualJogador = vidaMaximaJogador;
         vidaAtualEscudo = vidaMaximaEscudo;
+
+        barraDeEnergiaEscudo.maxValue = vidaMaximaEscudo;
+        barraDeEnergiaEscudo.value = vidaAtualEscudo;
+        barraDeEnergiaEscudo.gameObject.SetActive(false);
 
         EscudoDoJogador.SetActive(false);
         EscudoAtivo = false;
@@ -42,10 +48,12 @@ public class VidaJogador : MonoBehaviour
         else
         {
             vidaAtualEscudo -= dano;    
+            barraDeEnergiaEscudo.value = vidaAtualEscudo;
             if (vidaAtualEscudo <= 0)
             {               
                 EscudoDoJogador.SetActive(false);
                 EscudoAtivo = false;
+                barraDeEnergiaEscudo.gameObject.SetActive(false);
             }
         }
         
@@ -53,7 +61,11 @@ public class VidaJogador : MonoBehaviour
 
     public void AtivarEscudo()
     {      
+        barraDeEnergiaEscudo.gameObject.SetActive(true);
+
         vidaAtualEscudo = vidaMaximaEscudo;
+
+        barraDeEnergiaEscudo.value = vidaAtualEscudo;
 
         EscudoDoJogador.SetActive(true);
         EscudoAtivo = true;

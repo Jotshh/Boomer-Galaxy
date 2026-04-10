@@ -177,7 +177,7 @@ MonoBehaviour:
   tempoAtualdosLasers: 0
   inimigoAtirador: 0
   velocidade: 2
-  vidaMaximaInimigo: 10
+  vidaMaximaInimigo: 2
   vidaAtualInimigo: 0
   prefabExplosao: {fileID: 6278201775517810574, guid: ed1d8c3107f218742812d8673f594805, type: 3}
   pontosPorMorte: 10

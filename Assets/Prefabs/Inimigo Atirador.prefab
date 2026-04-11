@@ -184,7 +184,7 @@ MonoBehaviour:
   vidaAtualInimigo: 0
   prefabExplosao: {fileID: 6278201775517810574, guid: ed1d8c3107f218742812d8673f594805, type: 3}
   efeitoExplosao: {fileID: 7240897831095817027, guid: fe2500422627a8e499cd306be18a0672, type: 3}
-  pontosPorMorte: 10
+  pontosPorMorte: 15
 --- !u!1 &4340165539978705280
 GameObject:
   m_ObjectHideFlags: 0

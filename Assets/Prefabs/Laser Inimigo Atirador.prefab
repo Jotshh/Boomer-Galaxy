@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db35cca9ad6b99948929a347d4054cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TiroInimigo
-  velocidadeDoLaser: 3
+  velocidadeDoLaser: 8
   danoDoLaser: 1
   impactoLaserDoInimigo: {fileID: 4270509212239452675, guid: ee8d5f9a43fbd214080e236b10b975bc, type: 3}
 --- !u!114 &-7344369425831710743

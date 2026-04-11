@@ -522,7 +522,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sair do Jogo
+  m_text: Voltar ao Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 731d9ad6de8c9f548aa3e46aa8d33746, type: 2}
   m_sharedMaterial: {fileID: 1270287484492294991, guid: 731d9ad6de8c9f548aa3e46aa8d33746, type: 2}
@@ -1593,7 +1593,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1541739171}
-  - {fileID: 650037781}
   - {fileID: 2024378109}
   - {fileID: 1085091857}
   - {fileID: 227988051}
@@ -1883,6 +1882,101 @@ Transform:
   - {fileID: 1937130685}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &558373613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 558373614}
+  - component: {fileID: 558373617}
+  - component: {fileID: 558373616}
+  - component: {fileID: 558373615}
+  m_Layer: 5
+  m_Name: "Texto de Cr\xE9ditos"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &558373614
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558373613}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2024378109}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1243.7942, y: 78.602}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &558373615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558373613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 3, y: 3}
+  m_UseGraphicAlpha: 1
+--- !u!114 &558373616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558373613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 9e8e2aea32880664fafa2348e41119c6, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 14
+    m_MaxSize: 50
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'JOGO CRIADO POR: Josiel Phelipe - 10/04/2026'
+--- !u!222 &558373617
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558373613}
+  m_CullTransparentMesh: 1
 --- !u!1 &572031121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2089,101 +2183,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1877994909}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &650037780
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 650037781}
-  - component: {fileID: 650037784}
-  - component: {fileID: 650037783}
-  - component: {fileID: 650037782}
-  m_Layer: 5
-  m_Name: 'Melhor Pontuacao '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &650037781
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 650037780}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 463647568}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 510, y: -132}
-  m_SizeDelta: {x: 996.15234, y: 90}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &650037782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 650037780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Outline
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 4, y: -4}
-  m_UseGraphicAlpha: 1
---- !u!114 &650037783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 650037780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Text
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 9e8e2aea32880664fafa2348e41119c6, type: 3}
-    m_FontSize: 10
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 90
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 'Recorde: 0'
---- !u!222 &650037784
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 650037780}
-  m_CullTransparentMesh: 1
 --- !u!1 &666563237
 GameObject:
   m_ObjectHideFlags: 0
@@ -4077,6 +4076,7 @@ MonoBehaviour:
   - {fileID: 2151622397499957053, guid: c2532ea10c6e6e5468790882827e536f, type: 3}
   - {fileID: 3941465116399809284, guid: 4220db621993fe64bb41bdb506d56c8c, type: 3}
   - {fileID: 3844361830540983567, guid: eccd31fc5e830af4bbdfe2d5cc72bd5f, type: 3}
+  - {fileID: 1806008126398864624, guid: 8a42dbc8abb84da4995b75e4eb17e7ea, type: 3}
   pontosDeSpawn:
   - {fileID: 86227820}
   - {fileID: 982024678}
@@ -4455,7 +4455,7 @@ MonoBehaviour:
   textoPontuacao: {fileID: 1541739172}
   textoPontuacaoFinal: {fileID: 1004089564}
   highScoreText: {fileID: 2024292850}
-  textoMelhorPontuacao: {fileID: 650037783}
+  textoMelhorPontuacao: {fileID: 0}
   salvarMelhorPontuacao: 1
   panelGameOver: {fileID: 2024378108}
 --- !u!1 &1999690591
@@ -4655,6 +4655,7 @@ RectTransform:
   - {fileID: 2024292848}
   - {fileID: 416227427}
   - {fileID: 161476798}
+  - {fileID: 558373614}
   m_Father: {fileID: 463647568}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4754,7 +4755,7 @@ MonoBehaviour:
   - {fileID: 1189284884}
   - {fileID: 1387202608}
   - {fileID: 1877489294}
-  tempoMaximoEntreSpawnarObjetos: 2
+  tempoMaximoEntreSpawnarObjetos: 0.8
   tempoAtualDeSpawnarObjetos: 0
 --- !u!4 &2110608011
 Transform:

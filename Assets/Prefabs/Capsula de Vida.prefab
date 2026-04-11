@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4777065343330920655}
   - component: {fileID: 2954679102766901343}
   - component: {fileID: 6321239186318360676}
+  - component: {fileID: -4787107630964925229}
   m_Layer: 0
   m_Name: Capsula de Vida
   m_TagString: Untagged
@@ -158,3 +159,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestruirComTempo
   tempoDeVida: 20
+--- !u!114 &-4787107630964925229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806008126398864624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a06c891ed359cc6429c0eb291fe05a25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoverPlanetas
+  velocidadeDoObjeto: 3

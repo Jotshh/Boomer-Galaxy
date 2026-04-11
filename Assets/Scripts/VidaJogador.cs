@@ -14,10 +14,16 @@ public class VidaJogador : MonoBehaviour
     public int vidaMaximaEscudo;
     public int vidaAtualEscudo;
 
+    public Slider barraDeEnergiaEscudo;
+
     void Start()
     {
         vidaAtualJogador = vidaMaximaJogador;
         vidaAtualEscudo = vidaMaximaEscudo;
+
+        barraDeEnergiaEscudo.maxValue = vidaMaximaEscudo;
+        barraDeEnergiaEscudo.value = vidaAtualEscudo;
+        barraDeEnergiaEscudo.gameObject.SetActive(false);
 
         EscudoDoJogador.SetActive(false);
         EscudoAtivo = false;
@@ -34,18 +40,19 @@ public class VidaJogador : MonoBehaviour
 
             if (vidaAtualJogador <= 0)
         {
-            Debug.Log("Game Over!");
-            // GameManager.instance.GameOver();
+            GameManager.instance.GameOver();
         }
 
         }
         else
         {
             vidaAtualEscudo -= dano;    
+            barraDeEnergiaEscudo.value = vidaAtualEscudo;
             if (vidaAtualEscudo <= 0)
             {               
                 EscudoDoJogador.SetActive(false);
                 EscudoAtivo = false;
+                barraDeEnergiaEscudo.gameObject.SetActive(false);
             }
         }
         
@@ -53,7 +60,11 @@ public class VidaJogador : MonoBehaviour
 
     public void AtivarEscudo()
     {      
+        barraDeEnergiaEscudo.gameObject.SetActive(true);
+
         vidaAtualEscudo = vidaMaximaEscudo;
+
+        barraDeEnergiaEscudo.value = vidaAtualEscudo;
 
         EscudoDoJogador.SetActive(true);
         EscudoAtivo = true;
@@ -75,7 +86,7 @@ public class VidaJogador : MonoBehaviour
         vidaAtualJogador = Mathf.Clamp(vidaAtualJogador, 0, vidaMaximaJogador);
     }
 
-    void AtualizarInterfaceVida()
+    public void AtualizarInterfaceVida()
     {
         for (int i = 0; i < vidasJogador.Length; i++)
         {

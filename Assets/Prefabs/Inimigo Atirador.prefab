@@ -157,7 +157,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!114 &1662244884033178388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,13 +172,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MovimentoInimigo
   laserDoInimigo: {fileID: 46266104198903019, guid: 286e0ab1b3a8ab34d904d413d9cfb2df, type: 3}
   localDoDisparoInimigo: {fileID: 2308256275948955492}
+  itemDropar: {fileID: 4198030893776189235, guid: 1ebefa47c53b1554da512d622016335a, type: 3}
+  chanceDroparItem: 10
   tempoEntreTiros: 2
   tempoAtualdosLasers: 0
   inimigoAtirador: 1
+  inimigoAtivado: 0
+  danoDaNave: 1
   velocidade: 1
   vidaMaximaInimigo: 3
   vidaAtualInimigo: 0
   prefabExplosao: {fileID: 6278201775517810574, guid: ed1d8c3107f218742812d8673f594805, type: 3}
+  efeitoExplosao: {fileID: 7240897831095817027, guid: fe2500422627a8e499cd306be18a0672, type: 3}
   pontosPorMorte: 10
 --- !u!1 &4340165539978705280
 GameObject:

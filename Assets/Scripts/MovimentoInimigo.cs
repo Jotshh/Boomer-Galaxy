@@ -5,10 +5,17 @@ public class MovimentoInimigo : MonoBehaviour
     public GameObject laserDoInimigo;
     public Transform localDoDisparoInimigo;
 
+    [Header("Drop de Itens")]
+    public GameObject itemDropar;
+    public int chanceDroparItem;
+
     public float tempoEntreTiros;
     public float tempoAtualdosLasers;
 
     public bool inimigoAtirador;
+    public bool inimigoAtivado;
+
+    public int danoDaNave;
 
     [Header("Movimento")]
     public float velocidade = 2f;
@@ -20,6 +27,7 @@ public class MovimentoInimigo : MonoBehaviour
     
     [Header("Efeitos")]
     public GameObject prefabExplosao;
+    public GameObject efeitoExplosao;
     
     [Header("Pontuação do Inimigo")]
     public int pontosPorMorte = 100;
@@ -28,6 +36,7 @@ public class MovimentoInimigo : MonoBehaviour
     
     void Start()
     {
+        inimigoAtivado = false;
         vidaAtualInimigo = vidaMaximaInimigo;
 
         alvo = GameObject.FindGameObjectWithTag("Player");
@@ -41,10 +50,15 @@ public class MovimentoInimigo : MonoBehaviour
     {
         movimentarInimigo();
 
-        if (inimigoAtirador == true)
+        if (inimigoAtirador == true && inimigoAtivado == true)
         {
             AtirarLaserInimigo();
         }
+    }
+
+    public void AtivarInimigo()
+    {
+        inimigoAtivado = true;
     }
 
     private void movimentarInimigo()
@@ -68,9 +82,30 @@ public class MovimentoInimigo : MonoBehaviour
 
         if (vidaAtualInimigo <= 0)
         {
-            Destroy(this.gameObject);
-            Instantiate(prefabExplosao, transform.position, Quaternion.identity);
+            
+            Instantiate(efeitoExplosao, transform.position, Quaternion.identity);
             GameManager.instance.AdicionarPontos(pontosPorMorte);
+            EfeitosSonoros.instance.somExplosao.Play();
+
+            int numeroAleatorio = Random.Range(0, 100);
+
+            if (numeroAleatorio <= chanceDroparItem)
+            {
+                Instantiate(itemDropar, transform.position, Quaternion.identity);
+            }
+
+            Destroy(this.gameObject);
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D collisioninfo)
+    {
+        if(collisioninfo.gameObject.tag == "Player")
+        {
+            collisioninfo.gameObject.GetComponent<VidaJogador>().ReceberDano(danoDaNave);
+            Instantiate(efeitoExplosao, transform.position, Quaternion.identity);
+            EfeitosSonoros.instance.somExplosao.Play();
+            Destroy(this.gameObject);
         }
     }
 

@@ -4,6 +4,8 @@ public class TiroInimigo : MonoBehaviour
 {
     public float velocidadeDoLaser;
     public int danoDoLaser;
+
+    public GameObject impactoLaserDoInimigo;
     void Start()
     {
         
@@ -25,6 +27,7 @@ public class TiroInimigo : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             other.GetComponent<VidaJogador>().ReceberDano(danoDoLaser);
+            Instantiate(impactoLaserDoInimigo, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
     }

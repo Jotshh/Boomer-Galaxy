@@ -48,7 +48,7 @@ public class MovimentoInimigo : MonoBehaviour
     
     void Update()
     {
-        movimentarInimigo();
+        MovimentarInimigo();
 
         if (inimigoAtirador == true && inimigoAtivado == true)
         {
@@ -61,7 +61,7 @@ public class MovimentoInimigo : MonoBehaviour
         inimigoAtivado = true;
     }
 
-    private void movimentarInimigo()
+    private void MovimentarInimigo()
     {
         transform.Translate(Vector3.down * velocidade * Time.deltaTime);
     }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1806008126398864624
+--- !u!1 &6744447843530709613
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7772322331422003585}
-  - component: {fileID: 315531794520075422}
-  - component: {fileID: 4777065343330920655}
-  - component: {fileID: 2954679102766901343}
-  - component: {fileID: 6321239186318360676}
-  - component: {fileID: -4787107630964925229}
+  - component: {fileID: 1834210131879223685}
+  - component: {fileID: 1127554551862627343}
+  - component: {fileID: 522613063754543867}
+  - component: {fileID: 8872370268058019437}
   m_Layer: 0
-  m_Name: Capsula de Vida
+  m_Name: Planeta 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7772322331422003585
+--- !u!4 &1834210131879223685
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806008126398864624}
+  m_GameObject: {fileID: 6744447843530709613}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.32, y: -1.261, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.5484887, y: 1.5484887, z: 1.5484887}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &315531794520075422
+--- !u!212 &1127554551862627343
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806008126398864624}
+  m_GameObject: {fileID: 6744447843530709613}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -83,92 +81,41 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -5182322772909377053, guid: 2f29b98a19805f34a8cafa258d65b099, type: 3}
+  m_Sprite: {fileID: -8268541130945840638, guid: d89919b57e7447e49be341f7d8d3ee8e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.22, y: 0.22}
+  m_Size: {x: 0.15625, y: 0.15625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!58 &4777065343330920655
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806008126398864624}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.37644535
---- !u!114 &2954679102766901343
+--- !u!114 &522613063754543867
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806008126398864624}
+  m_GameObject: {fileID: 6744447843530709613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21a8c97f9453b5e449994fa08ff893ae, type: 3}
+  m_Script: {fileID: 11500000, guid: a06c891ed359cc6429c0eb291fe05a25, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItensColetaveis
-  itemEscudo: 0
-  itemVida: 1
-  itemTiroDuplo: 0
---- !u!114 &6321239186318360676
+  m_EditorClassIdentifier: Assembly-CSharp::MoverPlanetas
+  velocidadeDoObjeto: 4
+--- !u!114 &8872370268058019437
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806008126398864624}
+  m_GameObject: {fileID: 6744447843530709613}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 16d522b60c804f24bb3b26bd82273367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestruirComTempo
   tempoDeVida: 20
---- !u!114 &-4787107630964925229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806008126398864624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a06c891ed359cc6429c0eb291fe05a25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MoverPlanetas
-  velocidadeDoObjeto: 3

@@ -83,7 +83,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6110744089834721792, guid: d260d16ec0a96604ba411e0f2ffc05de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -184,7 +184,7 @@ MonoBehaviour:
   vidaAtualInimigo: 0
   prefabExplosao: {fileID: 6278201775517810574, guid: ed1d8c3107f218742812d8673f594805, type: 3}
   efeitoExplosao: {fileID: 7240897831095817027, guid: fe2500422627a8e499cd306be18a0672, type: 3}
-  pontosPorMorte: 10
+  pontosPorMorte: 15
 --- !u!1 &4340165539978705280
 GameObject:
   m_ObjectHideFlags: 0

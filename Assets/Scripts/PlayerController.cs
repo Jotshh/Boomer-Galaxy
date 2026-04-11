@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour
 
     public bool temLaserDuplo;
 
+    public bool jogadorEstaVivo;
+
     [Header("Movimento")]
     public float velocidade = 5f;
 
@@ -29,6 +31,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         temLaserDuplo = false;
+        jogadorEstaVivo = true;
 
         tempoAtualdosLaserDuplo = tempoMaximoLaserDuplo;
     }
@@ -36,8 +39,12 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Movimentar();
-        AtirarLaserJogador();
 
+        if(jogadorEstaVivo == true)
+        {
+            AtirarLaserJogador();
+        }
+        
         if (temLaserDuplo == true)
         {
             tempoAtualdosLaserDuplo -= Time.deltaTime;

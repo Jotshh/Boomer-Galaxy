@@ -59,5 +59,11 @@ public class GameManager : MonoBehaviour
         MusicaFundo.Stop();
         MusicaGameOver.Play();
         textoPontuacaoFinal.text = "Pontuação Final: " + pontuacaoAtual;
+
+        if(pontuacaoAtual > PlayerPrefs.GetInt("melhorPontuacao")){
+            PlayerPrefs.SetInt("melhorPontuacao", pontuacaoAtual);
+        }
+
+        highScoreText.text = "RECORDE: " + PlayerPrefs.GetInt("melhorPontuacao");
     }
 }
